@@ -1,0 +1,3 @@
+file,line_num,triplet,triplet_len
+hotel/ar/test.txt,212,"['موقع', 'location general', 'positive', 'great']",4
+hotel/ar/test.txt,212,"['Monticello', 'hotel prices', 'positive', 'Good value']",4

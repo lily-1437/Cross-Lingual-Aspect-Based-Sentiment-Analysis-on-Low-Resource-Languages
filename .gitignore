@@ -1,0 +1,10 @@
+models/
+*.pkl
+*.pt
+*.h5
+*.bin
+__pycache__/
+*.pyc
+venv/
+.env
+.ipynb_checkpoints/

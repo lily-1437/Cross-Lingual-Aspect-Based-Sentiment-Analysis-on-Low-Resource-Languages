@@ -1,0 +1,63 @@
+{
+  "task": "TASD",
+  "domain": "restaurant",
+  "language": "english",
+  "n_dev_sentences": 316,
+  "n_test_sentences": 544,
+  "scores": {
+    "xlmr_alone": {
+      "f1": 0.5158562367864693,
+      "precision": 0.6991404011461319,
+      "recall": 0.40871021775544386,
+      "tp": 244,
+      "fp": 105,
+      "fn": 353
+    },
+    "mt5_alone": {
+      "f1": 0.6509274873524452,
+      "precision": 0.6553480475382003,
+      "recall": 0.6465661641541038,
+      "tp": 386,
+      "fp": 203,
+      "fn": 211
+    },
+    "ensemble_untuned": {
+      "f1": 0.49248554913294795,
+      "precision": 0.7947761194029851,
+      "recall": 0.35678391959798994,
+      "tp": 213,
+      "fp": 55,
+      "fn": 384,
+      "config": {
+        "xlmr_weight": 1.0,
+        "mt5_weight": 1.0,
+        "threshold": "0.5*(w1+w2)",
+        "agree_bonus": 1.3
+      }
+    },
+    "ensemble_tuned": {
+      "f1": 0.66447908121411,
+      "precision": 0.6511254019292605,
+      "recall": 0.678391959798995,
+      "tp": 405,
+      "fp": 217,
+      "fn": 192,
+      "config": {
+        "xlmr_weight": 0.6,
+        "mt5_weight": 0.6,
+        "threshold": 0.4,
+        "agree_bonus": 1.0
+      }
+    },
+    "union_baseline": {
+      "f1": 0.6573208722741433,
+      "precision": 0.6142649199417758,
+      "recall": 0.7068676716917923,
+      "tp": 422,
+      "fp": 265,
+      "fn": 175
+    }
+  },
+  "best_config_source": "tuned on dev split via grid search, applied once to test",
+  "notes": "Ensemble combines XLM-R (token classification) and mT5 (seq2seq) predictions at the span level via confidence-weighted voting. Tuned ensemble outperforms both individual models and the simple union baseline. Weights/threshold selected on dev, evaluated once on test to avoid tuning-on-test leakage."
+}

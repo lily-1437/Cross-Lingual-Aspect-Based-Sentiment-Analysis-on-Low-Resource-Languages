@@ -1,0 +1,20 @@
+{
+  "tasd": {
+    "mean_f1": 0.2824,
+    "std_f1": 0.0,
+    "precision": 0.3404,
+    "recall": 0.2413,
+    "seeds": [
+      0.2824
+    ]
+  },
+  "uabsa": {
+    "mean_f1": 0.4863,
+    "std_f1": 0.0,
+    "precision": 0.4668,
+    "recall": 0.5075,
+    "seeds": [
+      0.4863
+    ]
+  }
+}

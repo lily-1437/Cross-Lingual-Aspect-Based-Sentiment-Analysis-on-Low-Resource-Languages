@@ -1,0 +1,30 @@
+{
+  "swahili": {
+    "restaurant_only": 0.21264367816091953,
+    "restaurant_hotel_food": 0.16649949849548643
+  },
+  "arabic": {
+    "restaurant_only": 0.2765072765072765,
+    "restaurant_hotel_food": 0.270899470899471
+  },
+  "hindi": {
+    "restaurant_only": 0.30192307692307696,
+    "restaurant_hotel_food": 0.26556016597510373
+  },
+  "vietnamese": {
+    "restaurant_only": 0.15413891531874405,
+    "restaurant_hotel_food": 0.19627085377821396
+  },
+  "spanish": {
+    "restaurant_only": 0.36397748592870544,
+    "restaurant_hotel_food": 0.3698884758364312
+  },
+  "german": {
+    "restaurant_only": 0.3902877697841726,
+    "restaurant_hotel_food": 0.36867239732569246
+  },
+  "thai": {
+    "restaurant_only": 0.19714285714285712,
+    "restaurant_hotel_food": 0.1694915254237288
+  }
+}

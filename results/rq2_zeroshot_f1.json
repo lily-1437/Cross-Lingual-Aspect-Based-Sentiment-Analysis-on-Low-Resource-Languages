@@ -1,0 +1,30 @@
+{
+  "swahili": {
+    "f1_with_null": 0.21464393179538616,
+    "f1_without_null": 0.22455403987408185
+  },
+  "arabic": {
+    "f1_with_null": 0.30558722919042186,
+    "f1_without_null": 0.3198090692124105
+  },
+  "hindi": {
+    "f1_with_null": 0.3036437246963563,
+    "f1_without_null": 0.3138075313807531
+  },
+  "vietnamese": {
+    "f1_with_null": 0.14995131450827653,
+    "f1_without_null": 0.1585993820803296
+  },
+  "spanish": {
+    "f1_with_null": 0.3191256830601093,
+    "f1_without_null": 0.3360184119677791
+  },
+  "thai": {
+    "f1_with_null": 0.19154929577464788,
+    "f1_without_null": 0.1934566145092461
+  },
+  "german": {
+    "f1_with_null": 0.3643643643643643,
+    "f1_without_null": 0.37995824634655534
+  }
+}
